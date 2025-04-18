@@ -1,0 +1,44 @@
+@use '../helpers/colours' as var;
+@use '../helpers/fonts' as ft;
+
+.custom-footer {
+  max-width: 100%;
+  height: 289px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  background-color: var.$primary-bg;
+  border-top: 2px solid var.$secondary-head-ft-colour;
+
+  .footer-main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-logo {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var.$primary-ft-colour;
+      font-family: ft.$primary-font;
+      font-size: ft.$font-size;
+
+    }
+
+    .li-href {
+      color: var.$secondary-ft-colour;
+    }
+  }
+
+  a {
+    color: var.$secondary-ft-colour;
+  }
+}

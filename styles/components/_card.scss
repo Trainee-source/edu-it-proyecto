@@ -1,0 +1,16 @@
+@use '../helpers/colours' as cols;
+@use '../helpers/fonts' as ft;
+
+.card {
+    border-radius: 0;
+    justify-content: center;
+    margin: 10% 1%;
+}
+
+.h2-card {
+    font-family: ft.$header-font;
+    color: cols.$primary-ft-colour;
+    font-weight: ft.$font-weight-regular;
+    font-size: ft.$font-size-h-card;
+    margin-bottom: 2rem;
+}

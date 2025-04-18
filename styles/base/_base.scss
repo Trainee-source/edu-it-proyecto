@@ -1,0 +1,35 @@
+@use '../helpers/colours' as col;
+@use '../helpers/fonts' as ft;
+
+body {
+    background-color: col.$primary-bg;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    margin-bottom: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    font-family: ft.$primary-font;
+    font-weight: ft.$font-weight-semibold;
+    color: col.$primary-ft-colour;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &::after {
+        content: "";
+        width: 100%;
+    }
+}

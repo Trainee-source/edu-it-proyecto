@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "g": "^2.0.1",
+    "sass": "^1.86.3"
+  },"scripts": {
+  "sass": "sass styles/main.scss dist/styles.css --no-source-map --watch"
+}
+}

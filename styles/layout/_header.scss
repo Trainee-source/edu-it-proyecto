@@ -1,0 +1,32 @@
+@use '../helpers/colours' as col;
+@use '../helpers/fonts' as ft;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: col.$primary-ft-colour;
+  font-size: ft.$font-size;
+  border-bottom: 1px dashed col.$secondary-border-colour;
+
+  .logo {
+    width: auto;
+    height: auto;
+
+    @media (max-width: 580px) {
+      display: none;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: clamp(0.5rem, 2.5vw, 2rem);
+    padding: 1rem 0;
+    text-align: center;
+
+    a {
+      position: relative;
+    }
+  }
+}
